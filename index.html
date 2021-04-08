@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <script src="./assets/js/menu_Btn.js"></script>
+    <title>George6 Portfolio</title>
+</head>
+<body>
+    <header id = "#">
+        <a class="header-logo" href="#"><img src="./assets/image/logo.png" alt="" srcset=""></a>
+        <nav>
+            <div class="navbtn"><a href="#about"><span class="nav_text">About</span></a></div>
+            <div class="navbtn"><a href="#service"><span class="nav_text">Service</span></a></div>
+            <div class="navbtn"><a href="#product"><span class="nav_text">Product</span></a></div>
+        </nav>
+        <div class="dropdown-btn">
+			<div class="menu_btn" onclick="event.stopPropagation(); myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#about"><span class="a-border" onclick="menuclick(this)">About</span></a>
+				<a href="#service"><span class="a-border" onclick="menuclick(this)">service</span></a>
+				<a href="#product"><span class="a-border" onclick="menuclick(this)">Product</span></a>
+			</div>
+		</div>
+    </header>
+    <section class="banner">
+        <img class="bannerImg01" src="./assets/image/banner1.png" alt="">
+        <img class="bannerImg02" src="./assets/image/banner2.png" alt="">
+        <img class="bannerImg03" src="./assets/image/banner3.png" alt="">
+        <div class="bannerText01">美しいウェブサイトの制作</div>
+        <div class="bannerText02">便利なWebシステムを構築</div>
+        <div class="bannerText03">顧客の要求を見事に満足</div>
+        <a class="banner-mail" href="mailto:geolxl@hotmail.com">
+          <div>メールを送る</div>
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Minutemailer icon</title><path d="M5.564 2.703l3.45 3.734-2.434 4.798 5.14-.921 2.34 5.646L24 2.926 5.564 2.703zm-.636 8.088l.957-.787-1.234.39-.126-.18.51-.495-.669.27C1.813 10.979 0 13.455 0 16.35c0 1.951.822 3.705 2.133 4.947-.563-.99-.885-2.134-.885-3.355 0-2.865 1.809-5.415 4.315-6.42l.315-.766-.75.331-.211-.285.011-.011zm4.364-1.97L10.89 6l9.398-2.201L9.292 8.821z"/></svg>
+        </a>
+        <div class="scroll-box">
+          <div class="scroll-header">SCROLL</div>
+          <div class="scroll-div">
+            <div class="scroll-bar"></div>
+          </div>
+        </div>
+    </section>
+    <a class="to-top" id="topBtn" href="#">&#8593;</a>
+    <section class="promise">
+      <div class="content">
+        <div class="promise-container">
+          <div class="promise-card">
+            <div class="promise-title">信頼性</div>
+            私は常に顧客の成長を促進する立場でビジネスを行うことを約束します。
+          </div>
+          <div class="promise-card">
+            <div class="promise-title">責任性</div>
+            完璧な品質、高速、長期的なサポートをお約束します。<br>
+            顧客の利便性を一番に考えて作られいたします。
+          </div>
+          <div class="promise-card">
+            <div class="promise-title">指向性</div>
+            今後も仕事を依頼していただけるお客様と一緒に仕事をしたいと思います。
+          </div>
+          <div class="promise-card">
+            <div class="promise-title">通信</div>
+            円滑な通信のために最大限の努力をいたします。            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="content">
+        <div class="about-card" id ="about">
+          <div class="title">About me</div>
+          <div class="about-content">
+            <div class="about-profile"><img src="./assets/image/avatar.jpg" alt="">
+              <div>私の名前は金丸茂雄です。<br>
+                私はウェブとアプリの開発者です。<br>
+                私はHTML、CSS、Bootstrap、JavaScript（JQuery）、およびPHPに精通してます。<br>
+                Adobe Photoshop、Adobe Illustrator、Adobe XDも得意です。<br>
+                私はJavaScriptフレームワークとPythonフレームワークを使用してWebサイトを構築しています。<br>
+                私はウェブ開発だけのために働いているのではなく、自分のスキルで人々を助けるために働いています。<br>
+                ご連絡いただければ最善を尽くしてお手伝いいたします。
+              </div>
+            </div>
+            <div class="about-skill">
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>HTML</div>
+                  <div>95%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-html"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>CSS</div>
+                  <div>90%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-css"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>JavaScript</div>
+                  <div>90%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-css"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>PHP</div>
+                  <div>85%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-php"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>Laravel</div>
+                  <div>80%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-laravel"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>Wordpress</div>
+                  <div>90%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-css"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>Node.js/React</div>
+                  <div>85%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-php"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>Python/C#</div>
+                  <div>80%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-laravel"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-name">
+                  <div>Photoshop/XD</div>
+                  <div>95%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-html"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skill">
+      <div class="content">
+        <div class="skill-container">
+          <div class="skill-card">
+            <img src="./assets/image/icon/html5.svg" alt="">
+            <div>HTML</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/css3.svg" alt="">
+            <div>CSS</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/javascript.svg" alt="">
+            <div>JavaScript</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/jquery.svg" alt="">
+            <div>JQuery</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/php.svg" alt="">
+            <div>PHP</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/node-dot-js.svg" alt="">
+            <div>Node.js</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/react.svg" alt="">
+            <div>React</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/vue-dot-js.svg" alt="">
+            <div>Vue.js</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/sass.svg" alt="">
+            <div>Sass</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/laravel.svg" alt="">
+            <div>Larabel</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/wordpress.svg" alt="">
+            <div>WordPress</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/mysql.svg" alt="">
+            <div>MySQL</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/mongodb.svg" alt="">
+            <div>MongoDB</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/python1.svg" alt="">
+            <div>Python</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/django.svg" alt="">
+            <div>Django</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/flask.svg" alt="">
+            <div>Flask</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/tensorflow.svg" alt="">
+            <div>TensorFlow</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/csharp.svg" alt="">
+            <div>C#</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/unity.svg" alt="">
+            <div>Unity</div>
+          </div>
+          <div class="skill-card">
+            <img src="./assets/image/icon/adobe.svg" alt="">
+            <div>Adobe Apps</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-me">
+      <div class="contact-me-content">
+        私は6年以上の開発経験があります。<br>
+        お気軽にご連絡ください。<br>
+        限られた予算内での最適なご提案を心がけております。
+      </div>
+    </section>
+    <section class="service" id="service">
+      <div class="content">
+        <div class="title">Service</div>
+        <div class="service-card service-card01">
+          <img src="./assets/image/service-web.png" alt="">
+          <div>
+            私はウェブサイト、ランディングページ、ウェブシステムを構築した良い経験があります。<br>
+            私は6年以上のウェブサイト構築の経験があります。<br>
+            私は特にアニメーションとエフェクトが得意です。<br>
+            デザインとコーディングを果たせるので、短期間で納品いたします。<br>
+            信頼感が出て認知度を増やすことができるランディングページも製作します。
+          </div>
+        </div>
+        <div class="service-card service-card02">
+          <div>
+            私はshopify、makeshop、magentoを使用してECサイトを構築することに精通しています。<br>
+            私はウェブマーケティングと人目を引くサイトの構築が得意です。<br>
+            クライアントがリクエストの詳細を定義するのを手伝うことができます。<br>
+            現金決済機能とクレジットカード決済機能をはじめ、機能を100％実装することができます。
+          </div>
+          <img src="./assets/image/service-sale.png" alt="">
+        </div>
+        <div class="service-card service-card01">
+          <img src="./assets/image/service-ai.png" alt="">
+          <div>
+            私はWindowsアプリケーションの開発に精通しています。<br>
+            私は特に、TensorFlow、Scipy、PandasなどのPythonライブラリを使用した機械学習、人工知能、データ分析が得意です。<br>
+            また、C＃とPythonを使用したWebアプリケーションも得意です。
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product" id="product">
+      <div class="content">
+        <div class="title">Product</div>
+        <div class="product-container">
+          <a href="https://theokuratokyo.jp/" target="_blank" class="product-link">
+            <div class="product-img-cover">
+              <img src="./assets/image/product1.png" alt="">
+              <div class="product-link-cover"></div>
+              <div class="product-link-text">サイトに訪れる</div>
+            </div>
+            <div class="product-text">AWS, Google Analytics</div>
+          </a>
+          <a href="https://morino-kuni.com/riverside-lodge/" target="_blank" class="product-link">
+            <div class="product-img-cover">
+              <img src="./assets/image/product2.png" alt="">
+              <div class="product-link-cover"></div>
+              <div class="product-link-text">サイトに訪れる</div>
+            </div>
+            <div class="product-text">WordPress, GSAP</div>
+          </a>
+          <a href="https://webinar.airz.co.jp/" target="_blank" class="product-link">
+            <div class="product-img-cover">
+              <img src="./assets/image/product3.png" alt="">
+              <div class="product-link-cover"></div>
+              <div class="product-link-text">サイトに訪れる</div>
+            </div>
+            <div class="product-text">WordPress</div>
+          </a>
+          <a href="https://www.budounotane.com/" target="_blank" class="product-link">
+            <div class="product-img-cover">
+              <img src="./assets/image/product4.png" alt="">
+              <div class="product-link-cover"></div>
+              <div class="product-link-text">サイトに訪れる</div>
+            </div>
+            <div class="product-text">WordPress, AWS, Google Analytics</div>
+          </a>
+          <a href="https://ace-industry.co.jp/" target="_blank" class="product-link">
+            <div class="product-img-cover">
+              <img src="./assets/image/product5.png" alt="">
+              <div class="product-link-cover"></div>
+              <div class="product-link-text">サイトに訪れる</div>
+            </div>
+            <div class="product-text">Google Analytics</div>
+          </a>
+          <a href="http://taotajima.jp/works/xperia-ear-duo/" target="_blank" class="product-link">
+            <div class="product-img-cover">
+              <img src="./assets/image/product6.png" alt="">
+              <div class="product-link-cover"></div>
+              <div class="product-link-text">サイトに訪れる</div>
+            </div>
+            <div class="product-text">Three.js, Google Analytics</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="content">
+        <div class="footer">
+            <a href="https://www.youtube.com/" target="_blank" class="outlink">
+              <img src="./assets/image/out/youtube.svg" alt="">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="outlink">
+              <img src="./assets/image/out/facebook.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="outlink">
+              <img src="./assets/image/out/instagram.svg" alt="">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" class="outlink">
+              <img src="./assets/image/out/twitter.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="outlink">
+              <img src="./assets/image/out/linkedin.svg" alt="">
+            </a>
+        </div>
+        <div class="copyright">Copyright © 2021 Kanemaru. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <script src="./assets/js/top_Btn.js"></script>
+</body>
+</html>
