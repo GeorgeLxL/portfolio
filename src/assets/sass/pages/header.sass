@@ -1,0 +1,86 @@
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1000
+    height: 70px
+    color: white
+    transition: all .8s ease
+    &:hover
+        transform: translateY(0) !important
+    &.header-scroll
+        transform: translateY(-100%)
+    &.header-scrolled
+        background-color: rgba(0, 0, 0, .3)
+        height: 60px
+        box-shadow: 0 0 15px rgba(0, 0, 0, .8)
+    &.open
+        transform: translateY(0) !important
+        background-color: transparent !important
+        height: 70px !important
+        box-shadow: none !important
+    & .container
+        & > a
+            font-family: 'Caveat', cursive
+            font-size: 2em
+            line-height: 1
+            display: flex
+            align-items: flex-end
+            filter: drop-shadow(0 0 1px rgba(255, 255, 255, 1))
+            img
+                height: 40px
+            span
+                padding-left: .2em
+        & ul a
+            position: relative
+            line-height: 1
+            transition: all .3s ease
+            &::after
+                position: absolute
+                content: ''
+                border-top: 1px solid white
+                bottom: -2px
+                left: -2%
+                right: -2%
+                transform: scale(0, 1)
+                transform-origin: 0%
+                transition: all .3s ease
+            &:hover::after
+                transform: scale(1, 1)
+            &.active::after
+                transform: scale(1, 1)
+    .menu-btn
+        cursor: pointer
+        span
+            width: 30px
+            height: 2px
+            background-color: $white
+            transition: all .3s ease
+        &.open
+            span:nth-child(1)
+                transform: rotate(-45deg) translate(-7px, 7px)
+                background-color: black
+            span:nth-child(2)
+                opacity: 0
+            span:nth-child(3)
+                transform: rotate(45deg) translate(-7px, -7px)
+                background-color: black
+
+menu
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: -1
+    background-color: rgba(255, 255, 255, .7)
+    backdrop-filter: blur(2px)
+    transform: translateY(-30%)
+    opacity: 0
+    transition: all .3s ease
+    font-size: 30px
+    &.open
+        z-index: 999
+        opacity: 1
+        transform: translateY(0)
